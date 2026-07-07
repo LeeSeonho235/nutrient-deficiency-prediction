@@ -2,7 +2,7 @@
 
 Multi-label DNN that predicts 9 nutrient deficiencies from routine blood test results. Built with CDC NHANES 2017-2018 public health data (~9,000 samples). Achieved **Val AUC 0.9818**.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](여기에_Colab_링크_넣기)
+[![Open In Colab](https://colab.research.google.com/drive/1w35uKNSfijqnH-XQPmq4ppEVWhxe2mAb?usp=sharing)
 
 ## Problem
 
@@ -44,6 +44,13 @@ Dense(9, sigmoid)  → multi-label output
 - **Val AUC: 0.9818**
 - Hamming Loss: low (most labels predicted correctly)
 - Inference function accepts partial blood values (missing values auto-imputed)
+<img width="1238" height="500" alt="스크린샷 2026-07-07 17 54 29" src="https://github.com/user-attachments/assets/72eac3dc-29b0-45b7-82da-492e0b4514f3" />
+<img width="1194" height="512" alt="스크린샷 2026-07-07 17 52 32" src="https://github.com/user-attachments/assets/5d3f2559-c8cf-4bbb-8b3a-cd69f27b230a" />
+<img width="505" height="305" alt="스크린샷 2026-07-07 17 54 45" src="https://github.com/user-attachments/assets/d4eb1471-4c69-47ad-8f05-a154ab10f575" />
+<img width="469" height="131" alt="스크린샷 2026-07-07 17 55 44" src="https://github.com/user-attachments/assets/d42154d2-50ce-43fe-b619-f69f80a97343" />
+
+
+
 
 ## Data Pipeline
 
