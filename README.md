@@ -1,6 +1,6 @@
 # Blood Nutrient Deficiency Prediction
 
-Multi-label DNN that predicts 9 nutrient deficiencies from routine blood test results. Built with CDC NHANES 2017-2018 public health data (~9,000 samples). Achieved **Val AUC 0.9818**.
+Multi-label DNN that predicts 9 nutrient deficiencies from routine blood test results. Built with CDC NHANES 2017-2018 public health data (~9,000 samples). Achieved **Val AUC 0.9681**.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1w35uKNSfijqnH-XQPmq4ppEVWhxe2mAb?usp=sharing)
 
