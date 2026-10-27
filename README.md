@@ -38,7 +38,7 @@ The DNN is not clearly better than logistic regression label by label. Its advan
 - **Data:** CDC NHANES 2013-14, 2015-16, 2017-18. Adults aged 20+ with CBC and biochemistry results (n = 15,361). Not every marker was measured in every cycle, so the three cycles are merged.
 - **Labels:** 8 deficiencies from international cutoffs. A person whose marker was **not measured** gets a missing label instead of being treated as normal. Magnesium is excluded because the public data has no serum measurement.
 - **Inputs (48):** CBC (15 items), biochemistry (calcium and iron excluded), age, sex, race/ethnicity, income-poverty ratio, BMI, exam season. Only columns available in all cycles are used.
-- **Model:** masked multi-label DNN, 48 → 128 → 64 → 32 → 8 (ReLU, batch norm, dropout 0.4 / 0.3 / 0.2, sigmoid outputs).
+- **Model:** masked multi-label DNN, 48 -> 128 -> 64 -> 32 -> 8 (ReLU, batch norm, dropout 0.4 / 0.3 / 0.2, sigmoid outputs).
   - Masked binary cross-entropy: only measured labels contribute to the loss.
   - Positive-class weight `sqrt((1 - p) / p)`, clipped to 1-20.
 - **Baselines:** per-label logistic regression and gradient boosting.
@@ -49,7 +49,7 @@ The DNN is not clearly better than logistic regression label by label. Its advan
 
 Open the notebook in Google Colab (CPU is enough) and choose **Runtime > Run all**. It downloads the NHANES files directly from the CDC site, runs all experiments, and saves tables and figures in `results/` (also downloaded as `results.zip`).
 
-- `NHANES_nutrient_deficiency_v2.ipynb`: final study (this README). Rename to match the file in the repository.
+- `NHANES_nutrient_deficiency_v2.ipynb`: final study (this README).
 - `v1/`: earlier preliminary experiment (see below).
 
 ## About the earlier version (v1)
